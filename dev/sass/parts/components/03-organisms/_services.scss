@@ -1,0 +1,19 @@
+.services {
+	text-align:center;
+	margin:0 auto;
+	line-height: 100px;
+	padding-bottom:7rem;
+	display:flex;
+	justify-content:center;
+	.col-md {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+ 	&__img-services {
+		margin: 0 auto;	
+	}
+	p {
+		font-weight: 800;
+		font-size: 4.1rem;
+	}
+}

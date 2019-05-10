@@ -1,0 +1,73 @@
+.referenze {
+	h4 {
+		font-size:4.2rem;
+	}
+	p {
+		font-size: 2.0rem;
+		text-align: justify;
+	}
+	padding-bottom: 4rem;
+}
+
+.services-info { 
+	div.container-service {
+		padding-bottom: 5rem;
+		display: inline-flex;
+	}
+	h1.title-service {
+		font-size: 3.9rem;
+	}
+	p.subtitle-service {
+		color:#151515;
+		font-size: 4rem;
+	}
+	img {
+		width: 128px;
+	}
+	span.icon-arrow {
+		background-color: #f4f2ee;
+		color: black;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor:pointer;
+		i {
+			font-size: 3rem;
+		}
+		&:hover {
+			i {
+				transition: 0.5s;
+				transform: translateX(10px)
+			}
+		}
+	}
+	div.col-md-4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border-left: 7px solid #b2aea3;
+	}
+	div.col-md-8 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	p.description-service {
+		font-size: 3rem;
+		font-weight: bold;
+	}
+	p.description-service2 {
+		letter-spacing: 0.2rem;
+		font-size: 3rem;
+		margin-top: 20px;
+		font-style: italic;
+		cite {
+			color: #151515;
+			font-weight: 800;
+		}
+	}
+}

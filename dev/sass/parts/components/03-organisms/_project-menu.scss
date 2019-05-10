@@ -1,0 +1,106 @@
+.project-menu {
+	color: black;
+	position: relative;
+	top: -40%;
+	width: 100%;
+	height: 23%;
+	padding-top: 1rem;
+	.subheader {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		&__text {
+			width: 64%;
+		}
+	}
+	.col-4:first-child {
+		padding: 0;
+		.nav {
+			position: initial;
+		}
+	}
+	div.col-4 {
+		flex: 0 0 18%;
+		max-width: 25.333%;
+		flex-direction: column;
+		align-self: center;
+		h1 {
+			font-size:6vw;
+		}
+	}
+	div.col-4:last-child {
+		flex: 0 0 51.333%;
+		max-width: 51.333%;
+		display: flex;
+		align-items: center;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			display: inline;
+			font-size: 15px;
+			margin-left: 10px;
+			font-weight: 800;
+			white-space: nowrap;
+		}
+		li.active {
+			a {
+				color:#84754e;
+			}
+			text-decoration: underline;
+			text-decoration-color:#84754e;
+		}
+	}
+
+//! Animation h1 with typing effect
+// .typingEffect {
+// 	width: 350px;
+// 	white-space:nowrap;
+// 	overflow:hidden;
+// 	border-right: 2px solid #424242;
+// 	animation: type 2.5s steps(30, end), cursorblink 1s step-end infinite;
+//   }
+  
+//   @keyframes type {
+// 	 from { width: 0; }
+// 	 to { width:350px; }
+//   }
+   
+//   @keyframes cursorblink{
+// 	from, to {border-color: transparent}
+//   } 
+
+  &__description {
+	  width: 100%;
+	  display: flex;
+	  justify-content: flex-end;
+  }
+  &__description--text {
+	  width: 99%;
+	  font-size: 1.8rem;
+	  text-align: left;
+  }
+
+}
+
+
+//* ----- Media Query ----- //
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 788px) {
+	div.progetti-menu div.col-4:first-child {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	div.progetti-menu div.col-4 {
+		flex: 0 0 38%;
+		max-width: 43.333%;
+	}
+	div.progetti-menu div.col-4:last-child {
+		flex: 0 0 101.333%;
+		max-width: 101.333%;
+	}
+}

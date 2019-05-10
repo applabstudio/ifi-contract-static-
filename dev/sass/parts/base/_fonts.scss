@@ -1,0 +1,64 @@
+// Insert custom font-face here
+@font-face {
+    font-family: 'Post Grotesk Book';
+    src: url('../../../fonts/PostGrotesk-BookItalic.woff2') format('woff2'),
+        url('PostGrotesk-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Post Grotesk Bold';
+    src: url('../../../fonts/PostGrotesk-Bold.woff2') format('woff2'),
+        url('../../../fonts/PostGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('../../../fonts/PostGrotesk-Medium.woff2') format('woff2'),
+        url('../../../fonts/PostGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('../../../fonts/PostGrotesk-BoldItalic.woff2') format('woff2'),
+        url('../../../fonts/PostGrotesk-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('../../../fonts/PostGrotesk-MediumItalic.woff2') format('woff2'),
+        url('../../../fonts/PostGrotesk-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Post Grotesk Light';
+    src: url('../../../fonts/PostGrotesk-Light.woff2') format('woff2'),
+        url('../../../fonts/PostGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk Book';
+    src: url('../../../fonts/PostGrotesk-Book.woff2') format('woff2'),
+        url('../../../fonts/PostGrotesk-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('../../../fonts/PostGrotesk-LightItalic.woff2') format('woff2'),
+        url('../../../fonts/PostGrotesk-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}

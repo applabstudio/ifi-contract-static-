@@ -1,0 +1,83 @@
+// vars
+$p: rem(8px 20px);
+$fw: 700;
+$b-rad: 6px;
+$fs: ms(0);
+$lh: 1.6;
+$ico-dim: rem(32px);
+
+// mixins
+@mixin button-style($c, $c-hover, $bg, $bg-hover, $border, $border-hover) {
+  color: $c;
+  background: $bg;
+  border-color: $border;
+
+  svg {
+    fill: $c;
+  }
+
+  @include on-event() {
+    color: $c-hover;
+    background: $bg-hover;
+    border-color: $border-hover;
+
+    svg {
+      fill: $c-hover;
+    }
+  };
+}
+
+// structure
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $p;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  text-decoration: none;
+  border-radius: $b-rad;
+  outline: none;
+  border: 2px solid;
+  cursor: pointer;
+  transition: all $tt;
+  width: 100%;
+
+  svg {
+    width: $ico-dim;
+    height: $ico-dim;
+    transition: all $tt;
+  }
+
+  @include media('>=sm') {
+    width: rem(280px);
+  };
+
+  &--white {
+    @include button-style(black, white, white, black, white, black);
+  }
+
+  &--blue {
+    @include button-style(white, get-color(primary, 0), get-color(primary, 0), white, get-color(primary, 0), get-color(primary, 0));
+  }
+}
+
+.btn-gold {
+  background-color: get-color(bg, 0);
+  transition: .3s;
+  color: white;
+  height: 50px;
+  width: 303px;
+  min-width:238px;
+  font-size: 24px;
+  border: #84754e;
+  cursor: pointer;
+  margin: 0 auto;
+  position:relative;
+  &:hover {
+    animation-name: background-color;
+    animation-duration: .5s;
+    background-color: get-color(bg, 4);
+  }
+}
