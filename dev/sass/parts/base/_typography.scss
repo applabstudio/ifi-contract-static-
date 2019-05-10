@@ -14,7 +14,7 @@ h1,
   line-height: 1.1;
   font-weight: 700;
   font-family: $title-font-family;
-
+  
   @include media('>=sm') {
     font-size: ms(10);
   }
