@@ -1,0 +1,16 @@
+div.press-component {
+	margin-top: $mt;
+	display: flex;
+flex-direction: column;
+border: 1px dotted blue;
+	.press-heading{
+		&__press-title {
+			text-align: center;
+			font-size: ms(5);
+		}
+	}
+	figcaption {
+		text-align: center;
+		font-size: ms(5);
+	}
+}
