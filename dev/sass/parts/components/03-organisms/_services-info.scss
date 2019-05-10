@@ -14,12 +14,12 @@
 		padding-bottom: 5rem;
 		display: inline-flex;
 	}
-	h1.title-service {
-		font-size: 3.9rem;
-	}
 	p.subtitle-service {
 		color:#151515;
-		font-size: 4rem;
+		font-size: ms(6);
+		@include media('>=sm') {
+			font-size: ms(10);
+		  }
 	}
 	img {
 		width: 128px;
@@ -57,17 +57,34 @@
 		justify-content: center;
 	}
 	p.description-service {
-		font-size: 3rem;
+		font-size: ms(4);
+		@include media('>=sm') {
+			font-size: ms(8);
+		  }
 		font-weight: bold;
 	}
 	p.description-service2 {
 		letter-spacing: 0.2rem;
-		font-size: 3rem;
+		font-size: ms(4);
+		@include media('>=sm') {
+			font-size: ms(8);
+		  }
 		margin-top: 20px;
 		font-style: italic;
 		cite {
 			color: #151515;
 			font-weight: 800;
 		}
+	}
+}
+
+//*---- Media Query ----//
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.services-info div.container-service {
+		display: initial;
 	}
 }
