@@ -8,7 +8,7 @@ $spacing: rem(6px);
 	height: 23%;
 	padding-top: 1rem;
 	div.col-md-3 {
-		flex: 0 0 18.5%;
+		flex: 0 0 20%;
 		max-width: 30%;
 		.nav {
 			position: initial;
@@ -31,7 +31,7 @@ $spacing: rem(6px);
   &__heading {
     display: flex;
     justify-content: space-between;
-    h1.typingEffect {
+    h1.page-title {
 	  font-size: ms(16);
 	  line-height: inherit;
 	  position: unset;
@@ -66,15 +66,15 @@ $spacing: rem(6px);
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 1026px) {
-	.project-menu .col-4:first-child {
+	.page-description .col-4:first-child {
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
-	.project-menu .col-4 {
+	.page-description .col-4 {
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
-	.project-menu .col-4:last-child {
+	.page-description .col-4:last-child {
 		flex: 0 0 101.333%;
 		max-width: 101.333%;
 	}

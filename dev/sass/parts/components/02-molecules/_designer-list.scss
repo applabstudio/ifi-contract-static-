@@ -7,6 +7,15 @@
 		top: 4rem;
 	}	
 	li {
-		font-size: 4.2rem;
+		font-size: ms(5);
+		@include media('>=sm') {
+			font-size: ms(6);
+		}
+		@include media('>=md') {
+			font-size: ms(8);
+		}
+		@include media('>=md') {
+			font-size: ms(10);
+		}
 	}
 }
