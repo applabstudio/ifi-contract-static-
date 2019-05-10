@@ -1,0 +1,22 @@
+.nav {
+	background: #FFFFFF;
+	mix-blend-mode: normal;
+	opacity: 0.84;
+	position: absolute;
+	top: 41px;
+	left:60px;
+	width: 243px;
+	height: 145px;
+	z-index: 9999;
+	&__logo {
+		margin-top: 20px;
+		margin-left:28px;
+		display: inline;
+	}
+
+	&__title-contract {
+		margin-left:10px;
+		display: inline;
+		font-size: 30.6px;
+	}
+}

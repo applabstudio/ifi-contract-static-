@@ -1,0 +1,120 @@
+.site-footer {
+  background-color: white;
+  margin-bottom: 0;
+  color: black;
+  padding-bottom: 9.5rem;
+  padding-top: 9.5rem;
+  display: flex;
+  align-items: center;
+  font-size: ms(4);
+  .logo-footer {
+      display: flex;
+      align-items: center;
+      p {
+          font-size: 1rem;
+      }
+  }
+  .social-footer {
+      display: flex;
+      flex-direction: column;
+  }
+  .social-footer ul {
+      margin: 30px 0 0 0;
+      padding: 0;
+  }
+  .social-footer--ul li {
+      display: inline;
+      padding-right: 7px;
+      margin: 0;
+      i {
+          font-size: 18px;
+          opacity: 0.7;
+          &:hover {
+              transition: 0.8s;
+              opacity: 1;
+          }
+      }
+  }
+  .sub-footer {
+      padding-top: 4rem;
+      .iubenda-container {
+        font-size: 14px;
+        white-space: nowrap;
+      }
+      p {
+          font-size:14px;
+          text-align: center;
+        //   white-space: nowrap;
+      }
+      .col-xl-2 {
+        //   align-items: center;
+          display: flex;
+          justify-content: center;
+      }
+      .col-xl-8 {
+        padding-left: 25px;
+      }
+      .col-xl-2:last-child {
+        display: flex;
+        justify-content: center;
+        // position: relative;
+        // right: 8px;
+      }
+    //   .webit-credits-pos-bn {
+    //       margin-top:-2px;
+    //   }
+  }
+  &__text {
+      text-align: left;
+      @include media('>=md') {
+          text-align: left;
+      }
+  }
+  &__logo {
+      min-width: 32px;
+      height: auto;
+      text-align: left;
+      position: relative;
+      right: 5px;
+  }
+  &__btns {
+      @include media('>=sm') {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > * + * {
+              margin: 0 0 0 rem(12px);
+          }
+      }
+      @include media('>=md') {
+          flex-direction: column;
+          align-items: flex-end;
+          > * + * {
+              margin: rem(12px) 0 0 0;
+          }
+      }
+  }
+  &__menus {
+      margin: rem(30px) 0 0;
+      @include media('>=lg') {
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  }
+  &__colophon {
+      margin: rem(30px 0);
+      border-top: 1px dashed get-color(bg,0);
+      border-bottom: 1px dashed get-color(bg,0);
+      font-size: ms(-1);
+      &__wrapper {
+          padding: rem(8px 0);
+          text-align: center;
+          @include media('>=md') {
+              text-align: center;
+              display: flex;
+              justify-content: space-between;
+          }
+      }
+  }
+}

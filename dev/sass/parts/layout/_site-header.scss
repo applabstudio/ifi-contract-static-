@@ -1,0 +1,107 @@
+.site-header {
+  position: relative;
+  height: 750px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+  &__bar {
+    position: absolute;
+    bottom: 28px;
+  }
+
+  #background {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .background-animation {
+    animation: bgScale 60s ease-out 0s;
+  }
+
+  @keyframes bgScale {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.4);
+      opacity: 1;
+    }
+  }
+
+  &__caption {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-bottom: 4.5rem;
+    animation: text 3s 1;
+    z-index: 9999;
+    p {
+      text-align: left;
+      font-size: 26px;
+      color: rgb(240, 240, 240);
+      text-shadow: 0px 0px 2.5px #3f3f3f;
+    }
+    @keyframes text {
+      0% {
+        transform: scale(1, 1);
+      }
+      80% {
+        transform: scale(1, 1);
+      }
+      20% {    
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+  //* Inside Detail Project Page 
+  &__caption-detail {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    animation: text 3s 1;
+    z-index: 9999;
+    background-color: rgba(21, 21, 21, 0.3);
+    width: 100%;
+    padding-top: 2.5rem;
+    &__company {
+      text-align: left;
+      font-size: 8vh;
+      font-family:$alt-font-family;
+      color: rgb(240, 240, 240);
+      text-shadow: none
+    }
+    &__city {
+      text-align: left;
+      font-size: 5vh;
+      font-family:$base-font-family;
+      color: rgb(240, 240, 240);
+      text-shadow: none;
+    }
+    div.share {
+      bottom: 4.5rem;
+    }
+    @keyframes text {
+      0% {
+        transform: scale(1, 1);
+      }
+      80% {
+        transform: scale(1, 1);
+      }
+      20% {    
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+$spacing: rem(6px);
+
+.secondary-menu {
+	color: black;
+	position: relative;
+	top: -40%;
+	width: 100%;
+	height: 23%;
+	padding-top: 1rem;
+	div.col-md-3 {
+		flex: 0 0 18.5%;
+		max-width: 30%;
+		.nav {
+			position: initial;
+		}
+		p {
+			transform: rotate(-90deg);
+			font-size: 8.5rem;
+			position: absolute;
+			left: -60px;
+			top: 31rem;
+			color: #b2aea3;
+			opacity: 0.3;
+			line-height: 6rem;
+			font-family: $alt-font-family;
+		}
+  }
+  div.col-2 {
+	flex: 0 0 7.667%;
+}
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    h1.typingEffect {
+      font-size: ms(17);
+    }
+  }
+
+  &__description {
+	  width: 100%;
+	  display: flex;
+	  justify-content: flex-end;
+  }
+  &__description--text {
+	  width: 99%;
+	  font-size: 1.6rem;
+	  text-align: left;
+  }
+
+  .btn-gold {
+	  margin-top:5rem;
+  }
+}
+
+//*----- Media Query -----//
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.project-menu .col-4:first-child {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.project-menu .col-4 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.project-menu .col-4:last-child {
+		flex: 0 0 101.333%;
+		max-width: 101.333%;
+	}
+}
