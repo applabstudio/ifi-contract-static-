@@ -1,4 +1,4 @@
-.project-menu {
+.page-description {
 	color: black;
 	position: relative;
 	top: -40%;
@@ -93,15 +93,15 @@
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 788px) {
-	div.progetti-menu div.col-4:first-child {
+	div.page-description div.col-4:first-child {
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
-	div.progetti-menu div.col-4 {
+	div.page-description div.col-4 {
 		flex: 0 0 38%;
 		max-width: 43.333%;
 	}
-	div.progetti-menu div.col-4:last-child {
+	div.page-description div.col-4:last-child {
 		flex: 0 0 101.333%;
 		max-width: 101.333%;
 	}
