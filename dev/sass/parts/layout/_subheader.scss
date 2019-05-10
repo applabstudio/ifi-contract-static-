@@ -2,10 +2,13 @@
   .subheader {
    width: 100%;
    display: flex;
-   justify-content: space-around;
+   justify-content: unset;
    padding-bottom: 2.1rem;
    display: flex;
    align-items: center;
+   @include media('>=lg') {
+    justify-content: space-around;
+  }
    .subheader__ificontract-welcome-text {
     width: 77%;
     p {

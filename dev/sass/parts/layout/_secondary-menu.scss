@@ -32,7 +32,8 @@ $spacing: rem(6px);
     display: flex;
     justify-content: space-between;
     h1.typingEffect {
-      font-size: ms(17);
+	  font-size: ms(17);
+	  line-height: inherit;
     }
   }
 
