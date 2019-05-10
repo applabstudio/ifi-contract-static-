@@ -10,7 +10,10 @@
 		display: flex;
 		justify-content: space-around;
 		&__text {
-			width: 64%;
+			width: 100%;
+			@include media('>=lg') {
+				width:64%;
+			}
 		}
 	}
 	.col-4:first-child {
@@ -87,7 +90,6 @@
 
 
 //* ----- Media Query ----- //
-/* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 788px) {
