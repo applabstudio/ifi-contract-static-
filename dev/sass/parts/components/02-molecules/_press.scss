@@ -23,7 +23,15 @@ div.press {
 
 	img {
 		object-fit: contain;
+		transition: 0.3s ease;
 	}
+	div.zoom-effect-container { 
+		margin: 0 auto;
+		overflow: hidden;
+	  }
+	  div.zoom-effect-container:hover div.image-press img {
+		transform: scale(1.09);
+	  }
 
 	figcaption {
 		text-align: center;
