@@ -57,6 +57,27 @@
 		}
 	}
 
+	//* contatti
+	div.col-md-5 {
+		padding: 0;
+		p:first-child {
+			margin-top: $mt;
+		}
+		p:nth-child(2) {
+			font-family: $alt-font-family;
+		}
+		p:last-child {
+			margin-top:$mt;
+			font-family: $alt-font-family;
+		}
+	}
+	div.col-md-7 {
+		padding: 0;
+		p {
+			margin-top: $mt;
+		}
+	}
+
 //! Animation h1 with typing effect
 // .typingEffect {
 // 	width: 350px;
