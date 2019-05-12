@@ -38,4 +38,11 @@
 		-webkit-align-items: center;
 		align-items: center;
 	  }
+	  div.zoom-effect-container {
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	div.zoom-effect-container:hover  img {
+		transform: scale(1.09);
+	  }
 }
