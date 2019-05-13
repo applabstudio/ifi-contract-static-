@@ -6,6 +6,7 @@ div.share {
 	@include media('>=md') {
 		margin-top: unset;
 	  }
+	  
 	img {
 		position: absolute;
 	}
