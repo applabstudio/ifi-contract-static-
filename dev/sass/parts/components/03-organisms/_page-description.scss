@@ -9,7 +9,7 @@
 	.subheader {
 		width: 100%;
 		display: flex;
-		justify-content: space-around;
+		justify-content: left;
 		&__text {
 			width: 100%;
 			@include media('>=lg') {
@@ -29,7 +29,8 @@
 		flex-direction: column;
 		align-self: center;
 		h1 {
-			font-size:6vw;
+			font-size: 6vw;
+			width: 70rem;
 		}
 	}
 	div.col-4:last-child {
