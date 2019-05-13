@@ -8,14 +8,13 @@
 	width: 243px;
 	height: 145px;
 	z-index: 9999;
-	&__logo {
+	img {
 		margin-top: 20px;
 		margin-left:28px;
 		display: inline;
 	}
 
-	&__title-contract {
-		margin-left:10px;
+	span {
 		display: inline;
 		font-size: 30.6px;
 	}
