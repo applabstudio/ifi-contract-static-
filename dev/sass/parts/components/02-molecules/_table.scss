@@ -1,16 +1,15 @@
 .table-container {
-	width: 100%;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
+	display: flex;
+	justify-content: center;
 	table.project {
-		width: 78%;
-		margin: 0 auto;
 		border-collapse: collapse;
-		font-family: Agenda-Light, sans-serif;
-		font-weight: 100; 
-		background: #333; color: #fff;
+		font-weight: 100;
+		background: #333;
+		color: #fff;
 		text-rendering: optimizeLegibility;
-		border-radius: 5px; 
+		border-radius: 5px;
 	}
 	table.project thead th { font-weight: 600; }
 	table.project thead th, table.project tbody td { 
@@ -31,21 +30,5 @@
 	}
 	table.project tbody tr, td:last-child { 
 		border-bottom: 1px solid black;  
-	}
-	
-	@media screen and (max-width: 600px) {
-		table.project thead { display: none; }
-		table.project tbody td { 
-		display: block; padding: .6rem; 
-		}
-		table.project tbody tr td:first-child { 
-		background: rgb(228, 228, 228); color: #fff; 
-		}
-		table.projecttbody td:before { 
-		content: attr(data-th); 
-		font-weight: bold;
-		display: inline-block;
-		width: 6rem;  
-		}
-	}
+	}	
 }
