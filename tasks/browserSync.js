@@ -21,6 +21,38 @@ const browserSyncConfig = {
   },
 };
 
+browserSync.init({
+  server: {
+    //Middleware paths are relative to the base directory
+    baseDir: 'dist'
+  },
+  middleware: function(req,res,next) {
+    if (req.url === '/contatti') {
+      req.url = '/contatti.html';
+    } else if (req.url === '/hdesigner-detail') {
+      req.url = '/designer-detail.html';
+    } else if (req.url === '/designer') {
+      req.url = '/designer.html';
+    } else if (req.url === '/downlaod') {
+      req.url = '/download.html';
+    } else if (req.url === '/ifi-contract') {
+      req.url = '/ifi-contract.html';
+    } else if (req.url === '/index') {
+      req.url = '/index.html';
+    } else if (req.url === '/lavora-con-noi') {
+      req.url = '/lavora-con-noi.html';
+    } else if (req.url === '/press') {
+      req.url = '/press.html';
+    } else if (req.url === '/progetti') {
+      req.url = '/html/progetti.html';
+    } else if (req.url === '/project-detail') {
+      req.url = '/project-detail.html';
+    }
+    return next();
+  }
+});
+
+
 /**
  * Use Proxy
  * else create Server
