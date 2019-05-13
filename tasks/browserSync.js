@@ -33,7 +33,7 @@ browserSync.init({
       req.url = '/designer-detail.html';
     } else if (req.url === '/designer') {
       req.url = '/designer.html';
-    } else if (req.url === '/downlaod') {
+    } else if (req.url === '/download') {
       req.url = '/download.html';
     } else if (req.url === '/ifi-contract') {
       req.url = '/ifi-contract.html';
