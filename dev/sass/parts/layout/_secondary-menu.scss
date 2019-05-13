@@ -31,7 +31,7 @@ $spacing: rem(6px);
   &__heading {
     display: flex;
     justify-content: space-between;
-    h1.page-title {
+    h1 {
 	  font-size: ms(16);
 	  line-height: inherit;
 	  position: unset;

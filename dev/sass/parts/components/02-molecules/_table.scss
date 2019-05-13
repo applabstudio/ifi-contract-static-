@@ -1,9 +1,9 @@
 .table-container {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+	margin-top: $mt;
+	margin-bottom: $mt;
 	display: flex;
 	justify-content: center;
-	table.project {
+	table {
 		border-collapse: collapse;
 		font-weight: 100;
 		background: #333;
@@ -11,24 +11,24 @@
 		text-rendering: optimizeLegibility;
 		border-radius: 5px;
 	}
-	table.project thead th { font-weight: 600; }
-	table.project thead th, table.project tbody td { 
+	table thead th { font-weight: 600; }
+	table thead th, table tbody td { 
 		padding: .8rem; font-size: 1.4rem;
 	}
-	table.project thead th, table.project tbody td:first-child { 
+	table thead th, table tbody td:first-child { 
 		font-family: $alt-font-family;
 	}
-	table.project thead th, table.project tbody td:last-child { 
+	table thead th, table tbody td:last-child { 
 		font-family: $light-font-family;
 	}
-	table.project tbody td { 
+	table tbody td { 
 		padding: .8rem; font-size: 1.4rem;
 		color: #444; background: white; 
 	}
-	table.project tbody tr:not(:last-child) { 
+	table tbody tr:not(:last-child) { 
 		border-bottom: 1px solid black;  
 	}
-	table.project tbody tr, td:last-child { 
+	table tbody tr, td:last-child { 
 		border-bottom: 1px solid black;  
 	}	
 }

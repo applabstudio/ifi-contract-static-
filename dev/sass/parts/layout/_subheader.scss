@@ -40,6 +40,18 @@
  }
  .subheader__text {
    width: 64%;
+ul {
+	font-size: 2.2rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	font-family: $alt-font-family;
+	a:hover{
+		text-decoration: underline; 
+	}
+}
  }
  .wrapper-input {
    width: 2.38rem;
@@ -52,36 +64,32 @@ div.homepage {
   div.subheader {
     padding-top: 6rem;
     padding-bottom: 4rem;
-    p.welcome-text {
-      font-size: 2.4rem;
+    p {
+      font-size: 3.8rem;
       text-align: left;
-      span.welcome-text__namebrand {
-        font-size: 3.5rem;
+      strong {
         font-family: $alt-font-family;
       }
     }
-    input {
-      display: flex;
-      justify-content: center;
-    }
   }
 }
+
 //* Inside Project Detail 
 div.project-detail {
   div.subheader {
     padding-top: 6rem;
     padding-bottom: 4rem;
-    p.welcome-title {
+    h2 {
       font-size: 3.8rem;
       text-align: left;
       font-family: $base-font-family;
-      margin-bottom: 2rem;
+      margin-bottom: $mt;
     }
-    p.welcome-subtitle {
+    p {
       font-size: 2.4rem;
       text-align: left;
       font-family: $light-font-family;
-      margin-bottom: 8rem;
+      margin-bottom: $mt;
     }
   }
 }

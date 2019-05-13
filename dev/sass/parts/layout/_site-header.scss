@@ -46,7 +46,7 @@
     padding-bottom: 4.5rem;
     animation: text 3s 1;
     z-index: 9999;
-    p {
+    h4 {
       text-align: left;
       font-size: 26px;
       color: rgb(240, 240, 240);
@@ -75,17 +75,17 @@
     z-index: 9999;
     background-color: rgba(21, 21, 21, 0.3);
     width: 100%;
-    padding-top: 2.5rem;
-    &__company {
+    margin-top:$mt;
+    h1 {
       text-align: left;
-      font-size: 8vh;
+      font-size:ms(15);
       font-family:$alt-font-family;
       color: rgb(240, 240, 240);
       text-shadow: none
     }
-    &__city {
+    h3 {
       text-align: left;
-      font-size: 5vh;
+      font-size:ms(10);
       font-family:$base-font-family;
       color: rgb(240, 240, 240);
       text-shadow: none;

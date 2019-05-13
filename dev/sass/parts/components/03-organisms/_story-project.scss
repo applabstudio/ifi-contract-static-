@@ -1,13 +1,18 @@
 div.story-project {
 	background-color:#f4f2ee;
 	font-family:$base-font-family;
+	.container {
+		margin-bottom:$mt;
+	}
 	div.wrapper-story-title {
 		display: flex;
 		justify-content: space-around;
 		height: 100%;
-		align-items: center;
+		align-items: baseline;
 		color:#b2aea3;
 		font-family: $alt-font-family;
+		position: relative;
+		top: 11rem;
 		span.story-title {
 			transform: rotate(-90deg);
 			display: block;
