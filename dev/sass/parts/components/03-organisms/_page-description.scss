@@ -5,6 +5,7 @@
 	width: 100%;
 	height: 23%;
 	padding-top: 1rem;
+
 	.subheader {
 		width: 100%;
 		display: flex;
@@ -97,9 +98,13 @@
 //   } 
 
   &__description {
-	  width: 100%;
+	  width: 64%;
 	  display: flex;
 	  justify-content: flex-end;
+	  margin:unset;
+	  @include media('>=sm') {
+		margin: 0 auto;
+	  }
   }
   &__description--text {
 	  width: 99%;
