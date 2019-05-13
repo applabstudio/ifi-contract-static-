@@ -1,6 +1,8 @@
-.referenze {
+.partner {
 	h4 {
-		font-size: ms(8);
+		color:#151515;
+		text-align:left;
+		margin-bottom:$mt;
 		@include media('>=sm') {
 			font-size: ms(11);
 		}
