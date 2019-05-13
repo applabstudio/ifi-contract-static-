@@ -98,7 +98,7 @@ div.zoom-effect-container:hover div.image-card img {
 }
 
 //* ---- Card Progetti ----//
-div.cards-progetti {
+div.cards-progetti, .cards-download {
   div.col-md {
     margin: 1rem;
     padding:0;
@@ -143,6 +143,15 @@ div.cards-progetti {
       opacity: 1;
       font-size: 1.6rem;
     }
+  }
+}
+
+div.cards-download {
+  .col {
+    padding:0;
+  }
+  div.cards figcaption {
+    justify-content: center;
   }
 }
 
