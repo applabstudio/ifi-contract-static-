@@ -103,7 +103,7 @@
 	  display: flex;
 	  justify-content: flex-end;
 	  margin:unset;
-	  @include media('>=sm') {
+	  @include media('>=md') {
 		margin: 0 auto;
 	  }
   }
