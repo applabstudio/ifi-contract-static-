@@ -54,6 +54,7 @@ div.contact {
 	}
 
 	input.submit-button:hover {
+		transition:$tt;
 		color: get-color(bg, 0);
 		cursor:pointer;
 	}
