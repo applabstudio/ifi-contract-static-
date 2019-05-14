@@ -7,7 +7,7 @@
    padding-bottom: 2.1rem;
    display: flex;
    align-items: center;
-   @include media('>=lg') {
+   @include media('>=md') {
     justify-content: space-around;
   }
    .subheader__ificontract-welcome-text {
@@ -22,7 +22,11 @@
   }
  }
  .subheader__text {
-   width: 64%;
+  width: 98%;
+  margin: 0 auto;
+   @include media('>=md') {
+    width: 64%;
+   }
  }  
  .subheader__text .tinytext p {
   font-family: $light-font-family;
