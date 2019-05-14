@@ -16,60 +16,60 @@
 
 <body>
 	<div class="lavora-con-noi">
-		<!-- Header -->
-		<header class="site-header">
-			<div class="page-description">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-4">
-							<!-- Navigation -->
-							<div class="nav">
-									<a href="index.html"><img src="./images/logo.png" alt="Ifi Contract"
-										title="Ifi Contract"></a>
-								<span>Contract</span>
-								<!-- Hamburger Menu Nav -->
-								<div class="site-header__bar">
-									<div class="site-header__bar__buttons">
-										<div class="hamburger js-nav-toggle">
-											<div class="hamburger__icon">
-												<a href="#" data-modal="search-modal">
-													<span class="hamburger__line"></span>
-													<span class="hamburger__title">Menu</span>
-												</a>
+				<!-- Header -->
+				<header class="site-header">
+						<div class="secondary-menu">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-3">
+										<!-- Navigation -->
+										<div class="nav">
+											<a href="index"><img src="./images/logo.png" alt="Ifi Contract"
+													title="Ifi Contract"></a>
+											<span>Contract</span>
+											<!-- Hamburger Menu Nav -->
+											<div class="site-header__bar">
+												<div class="site-header__bar__buttons">
+													<div class="hamburger js-nav-toggle">
+														<div class="hamburger__icon">
+															<a data-modal="search-modal">
+																<span class="hamburger__line"></span>
+																<span class="hamburger__title">Menu</span>
+															</a>
+														</div>
+													</div>
+												</div> <!-- End Hamburger -->
+			
 											</div>
 										</div>
-									</div> <!-- End Hamburger -->
+										<p> Contract </p>
+									</div>
+									<div class="col-md">
+										<div class="secondary-menu__heading">
+											<h1>Lavora con noi</h1>
+											<div class="col-sm">
+												<div class="share">
+													<img src="./images/icons/share.png" alt="" id="share">
+													<div class="social">
+														<ul>
+															<li><a class="facebook"
+																	href="https://www.facebook.com/share.php?u={{url}}&title={{title}}"
+																	target="blank"><i class="fab fa-facebook-f"></i></a></li>
+															<li><a class="twitter"
+																	href="https://twitter.com/intent/tweet?status={{title}}+{{url}}"
+																	target="blank"><i class="fab fa-twitter"></i></a></li>
+															<li> <a class="linkedin"
+																	href="https://www.linkedin.com/shareArticle?mini=true&url={{url}}&title={{title}}&source={{source}}"
+																	target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="page-title">
-								<h1>Lavora con noi</h1>
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="share">
-								<img src="./images/icons/share.png" alt="">
-								<div class="social">
-									<ul>
-										<li><a class="facebook"
-												href="https://www.facebook.com/share.php?u={{url}}&title={{title}}"
-												target="blank"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a class="twitter"
-												href="https://twitter.com/intent/tweet?status={{title}}+{{url}}"
-												target="blank"><i class="fab fa-twitter"></i></a></li>
-										<li><a class="linkedin"
-												href="https://www.linkedin.com/shareArticle?mini=true&url={{url}}&title={{title}}&source={{source}}"
-												target="blank"><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div> <!-- End Row -->
-				</div>
-			</div>
-		</header>
-		<!-- End header -->
+					</header> <!-- End header -->
+					
 				<!-- Modal Menu -->
 				<div class="modal" id="search-modal">
 					<!-- <div class="modal__logo">
@@ -125,55 +125,64 @@
 					</div>
 				</div> <!-- End Modal Menu -->
 
-		<div class="page-description__description">
-			<div class="page-description__description--text">
-				<div class="subheader">
-					<div class="subheader__text">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col">
-									<div class="contact-staff-info">
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-										</p>
-										<p>
-											Ifi Contract
-										</p>
-										<p>
-											Strada Selva Grossa, 28/30 61010 Tavullia (PU) -
-											Italy Tel. +39
-											0721 20021 Fax. +39 0721 201773 Mail info@ificontract.it
-										</p>
-									</div>
-								</div>
-								<div class="col">
-									<div class="contact">
-										<form target="uploadfiles.php" method="POST" enctype="multipart/form-data">
-											<input type="text" name="Name" id="name" placeholder="Nome*" />
-											<input type="text" name="Lastname" id="lastname" placeholder="Cognome*" />
-											<br>
-											<input type="email" name="Email" id="email" placeholder="E-mail*" />
-											<input type="tel" name="Phone" id="phone" placeholder="Telefono" />
-											<br>
-											<input type="text" name="Nation" id="nation" placeholder="Nazione" />
-											<input type="text" name="Province" id="province" placeholder="Provincia" />
-											<br>
-											<input type="text" name="Cv" id="cv" placeholder="Curriculum*" />
-											<input type="file" name="File" id="file" placeholder="file" />
-											<textarea name="Message" rows="20" cols="20" id="Message" placeholder="Messaggio*"></textarea>
-											<input type="checkbox" name="" id=""><span>dichiaro di aver etto e di accettare l'informativa sulla privacy</span>
-											<br>
-											<input type="submit" name="submit" value="INVIA MESSAGGIO" class="submit-button" />
-										</form>
+				<div class="main">
+						<div class="subheader-container">
+							<div class="secondary-menu__description">
+								<div class="secondary-menu__description--text">
+									<div class="subheader">
+										<div class="subheader__text">
+											<div class="simple-text text-left">
+												<div class="tinytext">
+													<p>
+														Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quibusdam reprehenderit corporis facilis? Odio itaque nemo a. Vel tempore obcaecati deserunt minima debitis laudantium libero, ipsum quia placeat eius itaque.
+													</p>
+												</div>
+											</div>
+											<div class="">
+											<div class="container-fluid contact-container">
+													<div class="row">
+														<div class="col">
+															<div class="contact-staff-info">
+																<div class="simple-text text-left">
+																	<div class="tinytext">
+																			<p>
+																					Ifi. Contract <br>  <br> Strada Provinciale Feltresca, 70 61010 Rio Salso (PU) Tel. +39 0721 905287 info@ificontract.it 
+																			</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="contact">
+																<form target="uploadfiles.php" method="POST" enctype="multipart/form-data">
+																	<input type="text" name="Name" id="name" placeholder="Nome*" />
+																	<input type="text" name="Lastname" id="lastname" placeholder="Cognome*" />
+																	<br>
+																	<input type="email" name="Email" id="email" placeholder="E-mail*" />
+																	<input type="tel" name="Phone" id="phone" placeholder="Telefono" />
+																	<br>
+																	<input type="text" name="Nation" id="nation" placeholder="Nazione" />
+																	<input type="text" name="Province" id="province" placeholder="Provincia" />
+																	<br>
+																	<input type="text" name="Cv" id="cv" placeholder="Curriculum*" />
+																	<input type="file" name="File" id="file" placeholder="file" />
+																	<textarea name="Message" rows="20" cols="20" id="Message" placeholder="Messaggio*"></textarea>
+																	<input type="checkbox" name="" id=""><span>&nbsp;dichiaro di aver etto e di accettare l'informativa sulla privacy</span>
+																	<br>
+																	<input type="submit" name="submit" value="INVIA MESSAGGIO" class="submit-button" />
+																</form>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
+						</div> <!-- End Subheader Container -->
+					</div><!-- End Main -->
+					<hr>
 		<!-- Footer -->
 		<footer class="site-footer">
 				<div class="container">

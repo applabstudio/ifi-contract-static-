@@ -20,25 +20,6 @@
     }
 
   }
-
-  input {
-    background-color: get-color(bg, 0);
-    transition: .3s;
-    color: white;
-    height: 50px;
-    width: 100%;
-    min-width:238px;
-    font-size: 24px;
-    border: #84754e;
-    cursor: pointer;
-    margin: 0 auto;
-    position:relative;
-    &:hover {
-      animation-name: background-color;
-      animation-duration: .5s;
-      background-color: get-color(bg, 4);
-    }
-  }
  }
  .subheader__text {
    width: 64%;

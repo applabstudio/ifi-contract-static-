@@ -1,3 +1,7 @@
+div.contact-container {
+	.col {
+		padding:0;
+	}
 div.contact {
 	margin-top: $mt;
 	text-align: center;
@@ -50,7 +54,8 @@ div.contact {
 	}
 
 	input.submit-button:hover {
-		color: black;
+		color: get-color(bg, 0);
+		cursor:pointer;
 	}
 
 	label {
@@ -95,7 +100,8 @@ div.contact-staff-info {
 	width: 65%;
 	margin-top: $mt;
 	p:nth-child(2), p:last-child {
-		margin-top:8rem;
 		font-family: $alt-font-family;
+		font-size: ms(7);
 	}
+}
 }
