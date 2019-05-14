@@ -1,106 +1,91 @@
 div.contact-container {
 	.col {
-		padding:0;
-	}
-div.contact {
-	margin-top: $mt;
-	text-align: center;
-	input, textarea {
-		padding: 5px;
-		width: 49%;
-		font-size: 14px;
-		font-weight: 300;
-		color: black;
-		border-left:  transparent;
-		border-right:transparent;
-		border-top: transparent;
-		border-bottom: 1px solid black;
-		margin-bottom: 4rem;
+		padding: 0;
 	}
 
-	input[type="checkbox"], [type="radio"] {
-		width: 15px;
+	div.contact {
+		margin-top: $mt;
+		text-align: center;
+		form {
+			input,
+			textarea {
+				padding: 5px;
+				width: 49%;
+				font-size: 14px;
+				font-weight: 300;
+				color: black;
+				border-left: transparent;
+				border-right: transparent;
+				border-top: transparent;
+				border-bottom: 1px solid black;
+				margin-bottom: 4rem;
+			}
+
+			input[type="checkbox"],
+			[type="radio"] {
+				width: 15px;
+			}
+
+			#file {
+				border: transparent;
+				position: relative;
+				top: 0.8rem;
+			}
+
+			textarea {
+				height: 150px;
+				width: 100%;
+				border-top: 1px solid transparent;
+				border-left: 1px solid transparent;
+				border-right: 1px solid transparent;
+				border-bottom: 1px solid black;
+			}
+
+			textarea:focus,
+			input:focus {
+				background-color: get-color(bg, 1);
+				border-bottom: 1px solid black;
+			}
+
+			input.submit-button {
+				text-transform: uppercase;
+				width: 238px;
+				background-color: transparent;
+				font-family: $alt-font-family;
+				font-size: ms(5);
+				border: transparent;
+			}
+
+			input.submit-button:hover {
+				transition: $tt;
+				color: get-color(bg, 0);
+				cursor: pointer;
+			}
+
+			label {
+				float: left;
+				text-align: left;
+				margin-right: 16px;
+				width: 100px;
+				padding-top: 5px;
+				font-size: 18px;
+				font-weight: 300;
+			}
+
+			span {
+				font-size: 15px;
+			}
+		}
 	}
 
-	#file {
-		border: transparent;
-		position: relative;
-		top: 0.8rem;
-	}
+	div.contact-staff-info {
+		width: 65%;
+		margin-top: $mt;
 
-	textarea {
-		height: 150px;
-		width: 100%;
-		border-top: 1px solid transparent;
-		border-left: 1px solid transparent;
-		border-bottom: 1px solid black;
-		border-right: 1px solid transparent;
+		p:nth-child(2),
+		p:last-child {
+			font-family: $alt-font-family;
+			font-size: ms(7);
+		}
 	}
-
-	textarea:focus, input:focus {
-		background-color:get-color(bg, 1);
-		border-bottom: 1px solid black;
-	}
-
-	input.submit-button {
-		text-transform: uppercase;
-		width: 238px;
-		background-color: transparent;
-		font-family: $alt-font-family;
-		font-size: ms(5);
-		border: transparent;
-	}
-
-	input.submit-button:hover {
-		transition:$tt;
-		color: get-color(bg, 0);
-		cursor:pointer;
-	}
-
-	label {
-		float: left;
-		text-align: left;
-		margin-right: 16px;
-		width: 100px;
-		padding-top: 5px;
-		font-size: 18px;
-		font-weight: 300;
-	}
-	
-	span {
-		font-size: 15px;
-	}
-
-	::-webkit-input-placeholder {
-		color: black;
-		font-size: 14px;
-	}
-
-	:-moz-placeholder {
-		/* Firefox 18- */
-		color: black;
-		font-size: 14px;
-	}
-
-	::-moz-placeholder {
-		/* Firefox 19+ */
-		color: black;
-		font-size: 14px;
-	}
-
-	:-ms-input-placeholder {
-		color: black;
-		font-size: 14px;
-	}
-
-}
-
-div.contact-staff-info {
-	width: 65%;
-	margin-top: $mt;
-	p:nth-child(2), p:last-child {
-		font-family: $alt-font-family;
-		font-size: ms(7);
-	}
-}
 }
