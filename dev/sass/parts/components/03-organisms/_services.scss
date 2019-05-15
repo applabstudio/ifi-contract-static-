@@ -2,7 +2,7 @@
 	text-align:center;
 	margin:0 auto;
 	line-height: 100px;
-	padding-bottom:7rem;
+	margin-bottom: $mt;
 	display:flex;
 	justify-content:center;
 	.col-md {
@@ -11,9 +11,10 @@
 	}
  	&__img-services {
 		margin: 0 auto;	
+		width: 202px;
 	}
 	p {
 		font-weight: 800;
-		font-size: 4.1rem;
+		font-size: 3.9rem;
 	}
 }
