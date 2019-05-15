@@ -95,4 +95,7 @@ and (max-device-width : 480px) {
 	div.services-info p:first-child {
 		margin-top: 2rem;
 	}
+	div.services-info div.col-md-4 {
+		justify-content: flex-start;
+	}
 }
