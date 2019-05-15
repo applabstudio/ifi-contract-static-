@@ -76,10 +76,11 @@ div.project-detail {
   div.subheader {
     padding-top: 6rem;
     padding-bottom: 4rem;
-    h2 {
+    p:first-child {
       font-size: 3.8rem;
       text-align: left;
       font-family: $base-font-family;
+      font-weight:600;
       margin-bottom: $mt;
     }
     p {

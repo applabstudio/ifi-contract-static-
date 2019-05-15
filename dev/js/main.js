@@ -11,6 +11,7 @@ allclick.init();
 modal.init(); 
 swiper.init();
 
+
 // dynamic imports - swipers
 if (document.querySelectorAll('[data-swiper]').length > 0) {
   import(/* webpackChunkName: "swipers" */ './modules/swipers').then(swipers => {
