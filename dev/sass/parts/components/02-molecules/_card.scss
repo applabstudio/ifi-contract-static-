@@ -22,6 +22,10 @@ $small-fs: (
 );
 $spacing-arrow: rem(50px);
 
+
+
+
+
 div.cards {
   text-align: center;
   // margin-bottom: 4rem;
@@ -93,6 +97,7 @@ div.zoom-effect-container {
 div.zoom-effect-container:hover div.image-card img {
   transform: scale(1.09);
 }
+
 }
 
 //* ---- Card Progetti ----//
@@ -151,6 +156,115 @@ div.cards-download {
   }
   div.cards figcaption {
     justify-content: center;
+  }
+}
+
+//* Card News
+.card-news {
+  &__img {
+    position: relative;
+    margin: 0 0 $spacing;
+  }
+
+  &__badge {
+    position: absolute;
+    top: map-get($badge-pos, top);
+    right: map-get($badge-pos, right);
+    width: rem(20px);
+    height: rem(20px);
+    background: get-color(primary, 0);
+    border-radius: 100%;
+  }
+
+  &__cat {
+    font-family: $alt-font-family;
+    font-size: map-deep-get($fs, title, normal);
+    text-transform: uppercase;
+    float: left;
+    line-height: 1.3;
+    margin-right: rem(4px);
+  }
+
+  &__title {
+    font-size: map-deep-get($fs, title, normal);
+    font-family: $title-font-family;
+    line-height: 1.3;
+  }
+
+  &__abstract {
+    font-size: map-deep-get($fs, abstract, normal);
+    font-family: $title-font-family;
+    line-height: 1.3;
+    margin-top: $spacing/2;
+  }
+
+  &__footer {
+    margin-top: $spacing;
+  }
+
+  &__author {
+    font-style: italic;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: map-deep-get($fs, meta, xs);
+    padding-top: rem(4px);
+  }
+
+
+
+    .card-news__text {
+      flex-grow: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+
+  .card-news-large-wrapper > & {
+    @include media('>=sm') {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex: none;
+
+      .card-news__img, .card-news__text {
+        flex: 0 0 49%;
+      }
+    }
+
+    @include media('>=md') {
+      .card-news__title {
+        font-size: map-deep-get($fs, title, big);
+      }
+
+      .card-news__cat {
+        font-size: map-deep-get($fs, title, big);
+      }
+
+      .card-news__abstract {
+        font-size: map-deep-get($fs, abstract, big);
+      }
+    }
+  }
+
+  @include when-inside('.section--dark') {
+    .card-news__title a,
+    .card-news__author a {
+      color: white;
+    }
+  }
+
+  &--small {
+    .card__title {
+      font-size: map-get($small-fs, title);
+    }
+
+    .card__abstract {
+      font-size: map-get($small-fs, abstract);
+    }
   }
 }
 
