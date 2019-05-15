@@ -93,6 +93,26 @@ $content-top: rem(64px);
   }
 }
 
+//* Modal Photo
+.photo {
+  background:rgba(#272727, 0.9);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .modal__close {
+    left:unset;
+    right: 9.1rem;
+    color:get-color(bg, 1)
+  }
+  label {
+    color: white;
+  }
+  img {
+    width: 90rem;
+  }
+}
+
 //---- Modal Menu ----//
 .modal__content.modal__content--menu-list-item {
   position: absolute;
