@@ -7,6 +7,10 @@ div.share {
 		margin-top: unset;
 	  }
 	  
+	  #share {
+		  position: absolute;
+		width: 40px;
+	  }
 	img {
 		position: absolute;
 	}
@@ -31,6 +35,9 @@ div.share {
 	&:hover {
 		.social {
 			opacity: 1;
+			i {
+				color:white;
+			}
 		}
 	}
 }
