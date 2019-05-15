@@ -202,6 +202,12 @@ div.cards-download {
     justify-content: space-between;
     font-size: map-deep-get($fs, meta, xs);
     padding-top: rem(4px);
+    i {
+      position:relative;
+      top:-10px;
+      font-size:3rem;
+      color:#151515;
+    }
   }
   .card-news__text {
     flex-grow: 2;
