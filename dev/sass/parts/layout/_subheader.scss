@@ -24,7 +24,7 @@
  .subheader__text {
   width: 98%;
   margin: 0 auto;
-   @include media('>=md') {
+   @include media('>=lg') {
     width: 64%;
    }
  }  
@@ -93,7 +93,6 @@ div.project-detail {
 }
 
 //* ---- Media Query ----//
-
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
