@@ -27,8 +27,8 @@ div.services-info {
 			font-size: ms(10);
 		  }
 	}
-	img {
-		width: 128px;
+	svg {
+		width: 20rem;
 	}
 	span {
 		background-color: #f4f2ee;
@@ -85,12 +85,14 @@ div.services-info {
 }
 
 //*---- Media Query ----//
-
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 320px) 
+and (min-device-width : 300px) 
 and (max-device-width : 480px) {
-	.services-info div.container-service {
-		display: initial;
+	div.services-info div.container-service{
+		display: block;
+	}
+	div.services-info p:first-child {
+		margin-top: 2rem;
 	}
 }
