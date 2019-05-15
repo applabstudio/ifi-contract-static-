@@ -1,29 +1,35 @@
 .services {
-	text-align:center;
-	margin:0 auto;
+	text-align: center;
+	margin: 0 auto;
 	line-height: 100px;
 	margin-bottom: $mt;
-	display:flex;
-	justify-content:center;
+	display: flex;
+	justify-content: center;
+
 	.col-md {
 		margin: 0;
 		padding: 0;
+
 		@include media(">=sm") {
 			margin: 1rem;
 			padding: 1rem;
 		}
 	}
- 	&__img-services {
-		margin: 0 auto;	
+
+	&__img-services {
+		margin: 0 auto;
 		width: 100%;
+
 		@include media(">=sm") {
 			width: 202px;
 		}
 	}
+
 	p {
 		font-weight: 800;
 		font-size: 3.9rem;
 		text-align: left;
+
 		@include media(">=sm") {
 			text-align: center;
 		}
