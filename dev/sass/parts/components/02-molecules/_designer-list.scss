@@ -6,7 +6,7 @@
 		position: relative;
 		top: 4rem;
 	}	
-	li {
+	li > a {
 		font-family:$alt-font-family;
 		font-size: ms(5);
 		@include media('>=sm') {
