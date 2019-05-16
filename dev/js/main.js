@@ -4,13 +4,12 @@ import allclick from './modules/allclick';
 import modal from './modules/modal';
 import searchModal from './modules/search-modal';
 import swiper from './modules/swipers';
-import stickyHeader from './modules/sticky-header';
+// FIXME import stickyHeader from './modules/sticky-header';
 
 siteHeader.init(); 
 allclick.init();
 modal.init(); 
 swiper.init();
-
 
 // dynamic imports - swipers
 if (document.querySelectorAll('[data-swiper]').length > 0) {
