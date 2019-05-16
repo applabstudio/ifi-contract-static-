@@ -10,21 +10,20 @@
 	transition: .225s ease-out;
 	width: 100%;
 	position: fixed;
-	top: 4.1rem !important;
-	left:4.6rem !important;
   }
 
 .nav {
-	position: fixed;
-	top: 3.1rem;
-	left: 3.1rem;
 	background: #FFFFFF;
 	mix-blend-mode: normal;
 	opacity: 0.84;
 	width: 243px;
 	height: 145px;
 	z-index: 9999;
-
+	@include media ('>=sm') {
+		position: fixed;
+		top: 3rem;
+		left: 2.8rem;
+	}
 	img {
 		margin-top: 20px;
 		margin-left:28px;
