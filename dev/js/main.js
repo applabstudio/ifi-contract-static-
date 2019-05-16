@@ -4,7 +4,6 @@ import allclick from './modules/allclick';
 import modal from './modules/modal';
 import searchModal from './modules/search-modal';
 import swiper from './modules/swipers';
-// FIXME import stickyHeader from './modules/sticky-header';
 
 siteHeader.init(); 
 allclick.init();

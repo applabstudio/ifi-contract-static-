@@ -4,6 +4,7 @@ const dom = {
   siteNav: '.js-site-nav',
 };
 
+// ANCHOR functions site-header
 const toggleNav = (evt) => {
   const nav = document.querySelector(dom.siteNav);
 
@@ -21,10 +22,28 @@ const setScrollClass = (evt) => {
   }
 }
 
+const setSticky = (evt) => {
+  window.onscroll = function () {
+    myFunction()
+  };
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    console.log("scroll and add class sticky in header");
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+}
+
 const events = () => {
   const navToggle = document.querySelector(dom.navToggle);
   navToggle.addEventListener('click', toggleNav);
   window.addEventListener('scroll', setScrollClass);
+  window.addEventListener('scroll', setSticky);
 };
 
 export default {
