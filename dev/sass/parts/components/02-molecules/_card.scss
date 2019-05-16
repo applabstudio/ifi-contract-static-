@@ -22,13 +22,11 @@ $small-fs: (
 );
 $spacing-arrow: rem(50px);
 
-
-
-
-
+// SECTION CARD
 div.cards {
+  // NOTE Card in homepage 
   text-align: center;
-  // margin-bottom: 4rem;
+  // margin-bottom: 4rem; 
   div.col-sm-2 {
     flex: 1 0 20%;
     max-width: 100%;
@@ -38,7 +36,7 @@ div.cards {
   img {
     width: 100%;
     height:auto;
-    object-fit: cover;
+    object-fit: cover; // FIXME 
     position:relative;
     cursor:pointer;
   }
@@ -74,33 +72,32 @@ div.image-card {
   height: 500px;
   display:flex;
   justify-content:center;
-  img {
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
+    img {
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+    }
   }
-}
-div.image-card picture {
-  width: 100%;
-  min-width: 208px;
-  // height: 500px;
-  display:flex;
-  justify-content:center;
-}
+  div.image-card picture {
+    width: 100%;
+    min-width: 208px;
+    // height: 500px;
+    display:flex;
+    justify-content:center;
+  }
+  source {
+    position: relative;
+  }
+  div.zoom-effect-container { 
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  div.zoom-effect-container:hover div.image-card img {
+    transform: scale(1.09);
+  }
+} // !SECTION
 
-source {
-  position: relative;
-}
-div.zoom-effect-container { 
-  margin: 0 auto;
-  overflow: hidden;
-}
-div.zoom-effect-container:hover div.image-card img {
-  transform: scale(1.09);
-}
 
-}
-
-//* ---- Card Progetti ----//
+// SECTION CARD PROGETTI & DOWNLOAD
 div.cards-progetti, .cards-download {
   margin-bottom:$mt;
   div.col-md {
@@ -148,8 +145,9 @@ div.cards-progetti, .cards-download {
       font-size: 1.6rem;
     }
   }
-}
+}// !SECTION
 
+// SECTION CARD DOWNLOAD
 div.cards-download {
   .col {
     padding:0;
@@ -157,10 +155,10 @@ div.cards-download {
   div.cards figcaption {
     justify-content: center;
   }
-}
+} // !SECTION
 
-//* Card News
-.card-news {
+// SECTION CARD NEWS & EVENTI
+article .card-news {
   &__img {
     position: relative;
     margin: 0 0 $spacing;
@@ -239,12 +237,6 @@ div.cards-download {
       }
     }
   }
-  @include when-inside('.section--dark') {
-    .card-news__title a,
-    .card-news__author a {
-      color: white;
-    }
-  }
   &--small {
     .card__title {
       font-size: map-get($small-fs, title);
@@ -253,10 +245,11 @@ div.cards-download {
       font-size: map-get($small-fs, abstract);
     }
   }
-}
+} // !SECTION
 
 
-//*---- Media Query ----//
+
+// SECTION MEDIAQUERY CARD
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -285,4 +278,4 @@ and (max-width : 1280px) {
     flex: 1 0 100%;
     max-width: 100%;
   }
-}
+} // !SECTION
