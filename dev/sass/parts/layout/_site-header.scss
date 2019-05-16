@@ -1,4 +1,19 @@
-.site-header {
+// ANCHOR Sticky header with JS component
+.sticky + .content {
+  padding-top: 102px;
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 9999999;
+}
+
+header .site-header {
   position: relative;
   height: 750px;
   background: white;
@@ -6,7 +21,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  
   &__bar {
     position: absolute;
     bottom: 28px;

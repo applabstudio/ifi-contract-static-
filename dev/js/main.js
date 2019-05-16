@@ -2,9 +2,9 @@ import 'lazysizes';
 import siteHeader from './modules/site-header';
 import allclick from './modules/allclick';
 import modal from './modules/modal';
-//! Nav Set class Active import nav from './modules/nav';
 import searchModal from './modules/search-modal';
 import swiper from './modules/swipers';
+import stickyHeader from './modules/sticky-header';
 
 siteHeader.init(); 
 allclick.init();
