@@ -36,7 +36,7 @@ div.cards {
   img {
     width: 100%;
     height:auto;
-    object-fit: cover; // FIXME 
+    object-fit: cover;
     position:relative;
     cursor:pointer;
   }
@@ -99,6 +99,7 @@ div.image-card {
 
 // SECTION CARD PROGETTI & DOWNLOAD
 div.cards-progetti, .cards-download {
+  // NOTE Card in page progetti e page download
   margin-bottom:$mt;
   div.col-md {
     margin: 1rem;
@@ -159,6 +160,7 @@ div.cards-download {
 
 // SECTION CARD NEWS & EVENTI
 article .card-news {
+  // NOTE Card in page news
   &__img {
     position: relative;
     margin: 0 0 $spacing;

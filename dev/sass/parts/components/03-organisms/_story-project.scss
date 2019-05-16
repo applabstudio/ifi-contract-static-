@@ -1,4 +1,5 @@
 div.story-project {
+	// NOTE in page project-detail
 	background-color:#f4f2ee;
 	font-family:$base-font-family;
 	.container {
@@ -38,3 +39,18 @@ div.story-project {
 		}
 	}
 }
+
+// SECTION Request Information Wrapper
+div.request-information {
+	&__wrapper {
+		height: 14.3rem;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		a,
+		span {
+			font-size: 2.6rem;
+		}
+	}
+} // !SECTION
