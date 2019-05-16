@@ -2,7 +2,7 @@ div.share {
 	position: relative;
 	display: flex;
 	justify-content: flex-end;
-	margin-top:-3rem;
+	margin-top: 1rem;
 	@include media('>=md') {
 		margin-top: unset;
 	  }

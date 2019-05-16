@@ -1,16 +1,14 @@
 $max-w: rem(1920px);
 $header-h: rem(62px);
 
-.progetti {
+.page {
   header.site-header {
-    height: auto;
-    
+    height: 15rem;
+    max-width: $max-w;
+    margin: 0 auto;
+
   }
   .content {
     padding-top: 1.7rem;
   }
-  // max-width: $max-w;
-  // margin: 0 auto;
-  // overflow-x: hidden;
-  // padding-top: $header-h;
 }

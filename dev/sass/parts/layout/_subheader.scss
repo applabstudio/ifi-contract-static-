@@ -1,4 +1,5 @@
 .subheader-container {
+  margin-left: 4rem;
   .subheader {
    width: 100%;
    display: flex;
@@ -107,4 +108,13 @@ and (max-device-width : 1439px) {
   .subheader-container .subheader__text {
     width:100%;
   }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 767px) {
+.subheader-container {
+    margin-left: unset;
+    padding-top: 10rem;
+}
 }
