@@ -6,13 +6,12 @@
     right: 0;
     bottom: 0;
     left: 0;
-    height: 500px;
+    height: 700px;
   }
 
   .background-animation {
-    animation: bgScale 60s ease-out 0s;
     max-height: 100%;
-    height: 500px;
+    height: 700px;
     overflow: hidden;
     .filter-image {
       height: 100%;
@@ -20,9 +19,10 @@
 
     }
     img {
+      animation: bgScale 60s ease-out 0s;
       object-fit: cover;
       width: 100%;
-      height: 100% !important;
+      height: 100%;
     }
   }
 
