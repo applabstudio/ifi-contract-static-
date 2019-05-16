@@ -10,46 +10,4 @@
     position: absolute;
     bottom: 28px;
   }
-
-  //* Inside Detail Project Page 
-  &__caption-detail {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    animation: text 3s 1;
-    z-index: 9999;
-    background-color: rgba(21, 21, 21, 0.3);
-    width: 100%;
-    margin-top:$mt;
-    h1 {
-      text-align: left;
-      font-size:ms(15);
-      font-family:$alt-font-family;
-      color: rgb(240, 240, 240);
-      text-shadow: none;
-      margin-top:$mt;
-    }
-    h3 {
-      text-align: left;
-      font-size:ms(10);
-      font-family:$base-font-family;
-      color: rgb(240, 240, 240);
-      text-shadow: none;
-    }
-    div.share {
-      bottom: 4.5rem;
-    }
-    @keyframes text {
-      0% {
-        transform: scale(1, 1);
-      }
-      80% {
-        transform: scale(1, 1);
-      }
-      20% {    
-        transform: scale(1.1, 1.1);
-      }
-    }
-  }
 }

@@ -72,8 +72,9 @@ div.press-page {
 //* Inside Project Detail 
 div.project-detail {
   div.subheader {
-    padding-top: 6rem;
     padding-bottom: 4rem;
+    position: relative;
+    top:40rem;
     p:first-child {
       font-size: 3.8rem;
       text-align: left;
