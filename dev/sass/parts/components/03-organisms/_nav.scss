@@ -1,13 +1,30 @@
+// ANCHOR Sticky header with JS component
+.sticky + .content {
+	padding-top: 102px;
+  }
+  .content {
+	padding-top: 1.6rem;
+  }
+  
+  .sticky {
+	transition: .225s ease-out;
+	width: 100%;
+	position: fixed;
+	top: 4.1rem !important;
+	left:4.6rem !important;
+  }
+
 .nav {
+	position: fixed;
+	top: 3.1rem;
+	left: 0.8rem;
 	background: #FFFFFF;
 	mix-blend-mode: normal;
 	opacity: 0.84;
-	position: absolute;
-	top: 41px;
-	left:60px;
 	width: 243px;
 	height: 145px;
 	z-index: 9999;
+
 	img {
 		margin-top: 20px;
 		margin-left:28px;
