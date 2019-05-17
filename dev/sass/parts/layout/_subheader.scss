@@ -69,7 +69,7 @@ and (max-device-width : 1024px) {
 and (min-device-width : 286px) 
 and (max-device-width : 767px) {
 .subheader-container {
-    margin-left: unset;
+    margin-left: 0.5rem;  
     padding-top: 10rem;
 }
 }

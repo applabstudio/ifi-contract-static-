@@ -32,7 +32,7 @@ $spacing: rem(6px);
 			font-size: ms(14);	
 			line-height: inherit;
 			position: unset;
-			margin-left: -1rem;
+			margin-left: -0.5rem;
 			white-space: nowrap;
 		@include media(">=sm") {
 			font-size: ms(17);
