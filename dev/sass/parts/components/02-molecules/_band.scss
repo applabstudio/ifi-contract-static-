@@ -11,5 +11,9 @@
 	p {
 		color: white;
 		font-size: 28px;
+		&:hover {
+			transition:$tt;
+			color:#8f8a7b;
+		}
 	}
 }

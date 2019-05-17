@@ -2,13 +2,11 @@ $max-w: rem(1920px);
 $header-h: rem(62px);
 
 .page {
-  header.site-header {
+  .site-header {
     height: 15rem;
     max-width: $max-w;
     margin: 0 auto;
 
   }
-  .content {
-    padding-top: 1.7rem;
-  }
+
 }

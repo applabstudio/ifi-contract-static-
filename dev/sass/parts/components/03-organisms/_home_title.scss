@@ -1,0 +1,12 @@
+.home_title {
+	height: 20rem;
+	display:flex;
+	align-items: center;
+	h1 {
+		font-size: 3.8rem;
+		font-family: $base-font-family;
+		strong {
+			font-family: $alt-font-family;
+		}
+	}
+}

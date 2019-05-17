@@ -11,7 +11,7 @@ $content-top: rem(64px);
 
 .modal {
   position: fixed;
-  background: rgba(white, 0.9);
+  background: rgba(255, 255, 255, 0.98);
   z-index: map-get($zIndex, modal);
   top: 0;
   left: 0;
