@@ -19,6 +19,8 @@
   z-index: 999999999 !important;
 }
 
-  .adminimal-admin-toolbar .nav {
+// ANCHOR position nav for Drupal8 backoffice
+.adminimal-admin-toolbar .nav {
     top: 79px;
-  }
+    z-index: 99 !important;
+}
