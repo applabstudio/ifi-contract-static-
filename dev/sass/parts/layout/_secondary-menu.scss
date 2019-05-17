@@ -53,9 +53,15 @@ $spacing: rem(6px);
 	  justify-content: flex-end;
   }
   &__description--text {
-	  width: 99%;
+	  width: 100%;
 	  font-size: 1.6rem;
-	  text-align: left;
+		text-align: left;
+		@include media('>=sm'){
+			margin-top:1rem;
+		}
+		@include media('>=md') {
+			width: 99%;
+		}
   }
 
   .btn-gold {
