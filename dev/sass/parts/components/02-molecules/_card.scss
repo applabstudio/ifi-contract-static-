@@ -26,7 +26,6 @@ $spacing-arrow: rem(50px);
 div.cards {
   // NOTE Card in homepage 
   text-align: center;
-  // margin-bottom: 4rem; 
   div.col-sm-2 {
     flex: 1 0 20%;
     max-width: 100%;
@@ -97,9 +96,9 @@ div.image-card {
 } // !SECTION
 
 
-// SECTION CARD PROGETTI & DOWNLOAD
-div.cards-progetti, .cards-download {
-  // NOTE Card in page progetti e page download
+// SECTION CARDS
+div.cards-progetti, .cards-download, .cards-newseventi {
+  // NOTE Card in page progetti, page download e news & eventi
   margin-bottom:$mt;
   div.col-md {
     margin: 1rem;
@@ -165,15 +164,15 @@ article .card-news {
     position: relative;
     margin: 0 0 $spacing;
   }
-  &__badge {
-    position: absolute;
-    top: map-get($badge-pos, top);
-    right: map-get($badge-pos, right);
-    width: rem(20px);
-    height: rem(20px);
-    background: get-color(primary, 0);
-    border-radius: 100%;
-  }
+  // &__badge {
+  //   position: absolute;
+  //   top: map-get($badge-pos, top);
+  //   right: map-get($badge-pos, right);
+  //   width: rem(20px);
+  //   height: rem(20px);
+  //   background: get-color(primary, 0);
+  //   border-radius: 100%;
+  // }
   &__cat {
     font-family: $alt-font-family;
     font-size: map-deep-get($fs, title, normal);
