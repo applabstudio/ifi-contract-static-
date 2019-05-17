@@ -66,7 +66,6 @@
     }
   }
 
-
   .zoom-background__caption__detail {
   // NOTE Inside Detail Project Page 
   margin: 0 auto;
@@ -77,9 +76,8 @@
   z-index: 9990;
   background-color: rgba(21, 21, 21, 0.3);
   width: 100%;
-  height:21.5%;
   position: absolute;
-  top: 48.2rem;
+  top: 50rem;
     h1 {
       text-align: left;
       font-size:ms(15);
@@ -117,7 +115,6 @@
       font-family: $light-font-family;
       margin-bottom: $mt;
     }
-  
     }
   }
    

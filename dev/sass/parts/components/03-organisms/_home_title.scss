@@ -1,8 +1,10 @@
 .home_title {
-	height: 20rem;
+	min-height: 20rem;
 	display:flex;
 	align-items: center;
 	h1 {
+		padding-top:2rem;
+		padding-bottom:2rem;
 		font-size: 3.8rem;
 		font-family: $base-font-family;
 		strong {

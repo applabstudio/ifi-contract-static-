@@ -1,5 +1,8 @@
 .subheader-container {
-  margin-left: 4rem;
+  margin-top:4rem;
+  @include media('>=md') {
+    margin-left: 4rem;
+  }
   .subheader {
    width: 100%;
    display: flex;
@@ -30,6 +33,14 @@
     font-family: $light-font-family;
     font-size: ms(5);
    }
+   ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.6rem;
+  }
+   ul > li {
+    font-size:1.6rem;
+  }
  }  
 
 
@@ -38,6 +49,7 @@
    margin-top: $mt;
    margin-bottom: $mt;
  }
+
 }
 
 
