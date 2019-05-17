@@ -8,7 +8,11 @@ const dom = {
 const toggleNav = (evt) => {
   const nav = document.querySelector(dom.siteNav);
 
+  document.querySelector('.nav').classList.add('zIndex');
+  document.querySelector('.modal').classList.toggle('open');
+  document.querySelector('.hamburger').classList.toggle('close');
   evt.currentTarget.classList.toggle('close');
+
   nav.classList.toggle('open');
 };
 
