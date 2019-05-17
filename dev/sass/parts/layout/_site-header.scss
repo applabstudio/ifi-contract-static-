@@ -18,3 +18,9 @@
 .zIndex{
   z-index: 999999999 !important;
 }
+
+@media (min-width: 1200px) {
+  .adminimal-admin-toolbar .site-header {
+    top: 79px;
+  }
+}
