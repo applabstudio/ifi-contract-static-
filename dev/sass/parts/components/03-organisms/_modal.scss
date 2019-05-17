@@ -25,9 +25,6 @@ $content-top: rem(64px);
   &.open {
     visibility: visible;
     opacity: 1;
-    .nav {
-      z-index: 999999;
-    }
   }
 
   &__close {

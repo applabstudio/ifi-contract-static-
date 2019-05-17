@@ -26,11 +26,12 @@
    @include media('>=lg') {
     width: 63.5%;
    }
+   .tinytext p {
+    font-family: $light-font-family;
+    font-size: ms(5);
+   }
  }  
- .subheader__text .tinytext p {
-  font-family: $light-font-family;
-  font-size: ms(5);
- }
+
 
  .wrapper-input {
    width: 2.38rem;

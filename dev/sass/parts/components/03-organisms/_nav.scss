@@ -23,14 +23,21 @@
 		top: 3rem;
 		left: 2.8rem;
 	}
-	img {
-		margin-top: 20px;
-		margin-left:28px;
-		display: inline;
-	}
 
-	span {
-		display: inline;
-		font-size: 30.6px;
+	&__header {
+		display: flex;
+		align-items: flex-end; 
+		justify-content: center;
+			img {
+				margin-top: 17px;
+				margin-bottom: -28px;
+			}
+			span {
+				display: block;
+				margin-left: 10px;
+				line-height: 0;
+				margin-bottom: -1rem;
+				font-size: 30.6px;
+			}
 	}
 }

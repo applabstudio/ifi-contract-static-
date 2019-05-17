@@ -20,23 +20,23 @@
 			<header class="site-header">
 					<!-- Navigation -->
 					<div class="nav" id="myHeader">
-							<a href="index.html"><img src="./images/logo.png" alt="Ifi Contract" title="Ifi Contract"></a>
-							<span>Contract</span>
-							<!-- Hamburger Menu Nav -->
-							<div class="site-header__bar">
-								<div class="site-header__bar__buttons">
-									<div class="hamburger js-nav-toggle">
-										<div class="hamburger__icon">
-											<a data-modal="search-modal">
-												<span class="hamburger__line"></span>
-												<span class="hamburger__title">Menu</span>
-											</a>
-										</div>
-									</div>
-								</div> <!-- End Hamburger -->
+						<a class="nav__header" href="index.html"><img src="./images/logo.png" alt="Ifi Contract" title="Ifi Contract"><span>Contract</span></a>
+						
+						<!-- Hamburger Menu Nav -->
+						<div class="site-header__bar js-nav-toggle js-allclick">
+						  <div class="site-header__bar__buttons">
+							<div class="hamburger ">
+							  <div class="hamburger__icon">
+								<a href="#" data-modal="search-modal">
+								  <span class="hamburger__line" ></span>
+								  <!-- <span class="hamburger__title">Menu</span> -->
+								</a>
+							  </div>
 							</div>
+						  </div> <!-- End Hamburger -->
 						</div>
-					</header> <!-- End header -->
+					  </div>
+			  </header> <!-- End header -->
 
 					<div class="main content">
 							<div class="secondary-menu">
@@ -245,59 +245,56 @@
 		</div> <!-- End Services Info -->
 
 		<!-- Modal Menu -->
-		<div class="modal" id="search-modal">
-			<!-- <div class="modal__logo">
-			<img src="" alt="">
-			<span></span>
+ <div class="modal" id="search-modal">
+		<!-- <div class="modal__logo">
+		  <img src="" alt="">
+		  <span></span>
 		</div> -->
-			<a href="#" class="modal__closeInOtherPage">&times; <label>Chiudi</label></a>
-			<div class="modal__content modal__content--v-center modal__content--chromeless" style="display:none;"
-				id="containerSearch">
-				<form action="" class="search-form">
-					<input type="text" name="" placeholder="cerca nel sito">
-					<button type="submit">
-						<svg>
-							<use xlink:href="/images/svg/sprite.svg#lens"></use>
-						</svg>
-					</button>
-				</form>
-			</div>
-			<div class="modal__content modal__content--menu-list-item">
-				<ul class="menu-list-item__ul">
-					<li class="menu-list-item__ul__li"> <a href="ifi-contract.html"><b>Ifi.</b> Contract</a></li>
-					<li> <a href="progetti.html">Progetti</a></li>
-					<li> <a href="designer.html">Designer e architetti</a></li>
-					<li> <a href="download.html">Download</a></li>
-					<li> <a href="press.html">Press</a></li>
-					<li> <a href="lavora-con-noi.html">Lavora con noi</a></li>
-					<li> <a href="news-&-eventi.html">News & Eventi</a></li>
-					<li> <a href="contatti.html">Contatti</a></li>
-					<br>
-					<li id="cerca">Cerca</li>
-					<li> <a href="#"></a> Italiano / English</li>
-				</ul>
-			</div>
-			<div class="container-footer-logo">
-				<div class="container">
-					<div class="row">
-						<div class="col-6 d-flex">
-							<ul>
-								<li><a href=""><i class="fab fa-facebook-square"></a></i></li>
-								<li><a href=""><i class="fab fa-twitter-square"></a></i></li>
-								<li><a href=""><i class="fab fa-instagram"></a></i></li>
-								<li><a href=""><i class="fab fa-pinterest-square"></a></i></li>
-								<li><a href=""><i class="fab fa-linkedin"></a></i></li>
-							</ul>
-						</div>
-						<div class="col-6 d-flex">
-							<a href="#"><img src="./images/ifi-logo.png" alt="Ifi Contract" title="Ifi Contract"
-									class="logo-small"></a>
-							<span> People-centric innovation </span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> <!-- End Modal Menu -->
+		<!-- <a href="#" class="modal__close">&times; <label>Chiudi</label></a>  -->
+		<div class="modal__content modal__content--v-center modal__content--chromeless" style="display:none;" id="containerSearch">
+		  <form action="" class="search-form">
+			<input type="text" name="" placeholder="cerca nel sito">
+			<button type="submit">
+			 <svg><use xlink:href="/images/svg/sprite.svg#lens"></use></svg>
+			</button>
+		  </form>
+		 </div><!-- End Modal Content Chromeless -->
+		 <div class="modal__content modal__content--menu-list-item">
+		   <!-- TODO implementing menu element -->
+			<ul class="menu-list-item__ul">
+			  <li class="menu-list-item__ul__li"> <a href="ifi-contract.html"><b>Ifi.</b> Contract</a></li>
+			  <li><a href="progetti.html">Progetti</a></li>
+			  <li><a href="designer.html">Designer e architetti</a></li>
+			  <li><a href="download.html">Download</a></li>
+			  <li><a href="press.html">Press</a></li>
+			  <li><a href="lavora-con-noi.html">Lavora con noi</a></li>
+			  <li><a href="news-&-eventi.html">News & Eventi</a></li>
+			  <li><a href="contatti.html">Contatti</a></li>
+			  <br>
+			  <li id="cerca">Cerca</li>
+			  <li> <a href="#"></a> Italiano / English</li>
+			</ul>
+		  </div><!-- End Modal Content Menu List Item -->
+		  <div class="container-footer-logo">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-6 d-flex">
+					  <ul>
+						  <li><a href="#"><i class="fab fa-facebook-square"></a></i></li>
+						  <li><a href="#"><i class="fab fa-twitter-square"></a></i></li>
+						  <li><a href="#"><i class="fab fa-instagram"></a></i></li>
+						  <li><a href="#"><i class="fab fa-pinterest-square"></a></i></li>
+						  <li><a href="#"><i class="fab fa-linkedin"></a></i></li>
+					  </ul>
+				  </div>
+				  <div class="col-6 d-flex">
+					<a href="#"><img src="./images/ifi-logo.png" alt="Ifi Contract" title="Ifi Contract" class="logo-small"></a>
+					<span> People-centric innovation </span>
+				 </div>
+				</div> <!-- End Row -->
+			  </div> <!-- End Container -->
+		  </div><!-- End Container Footer Logo -->
+	  </div> <!-- End Modal -->
 		<hr>
 		<!-- Footer -->
 		<footer class="site-footer">

@@ -7,14 +7,15 @@
 	}
 	li {
 		display: inline;
-		font-size: 15px;
-		font-weight: 800;
 		white-space: nowrap;
 		padding-right: 4rem;
 	}
 	li.active {
 		a {
+			font-weight: 800;
+			font-size: 18px;
 			color:#84754e;
+			text-transform: uppercase;
 		}
 		text-decoration: underline;
 		text-decoration-color:#84754e;
