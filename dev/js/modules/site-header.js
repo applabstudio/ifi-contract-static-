@@ -12,7 +12,6 @@ const toggleNav = (evt) => {
   document.querySelector('.modal').classList.toggle('open');
   document.querySelector('.hamburger').classList.toggle('close');
   evt.currentTarget.classList.toggle('close');
-
   nav.classList.toggle('open');
 };
 
@@ -26,22 +25,22 @@ const setScrollClass = (evt) => {
   }
 }
 
-const setSticky = (evt) => {
-  window.onscroll = function () {
-    myFunction()
-  };
-  var header = document.getElementById("myHeader");
-  var sticky = header.offsetTop;
+// const setSticky = (evt) => {
+//   window.onscroll = function () {
+//     myFunction()
+//   };
+//   var header = document.getElementById("myHeader");
+//   var sticky = header.offsetTop;
   
-  function myFunction() {
-    console.log("scroll and add class sticky in header");
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
-  }
-}
+//   function myFunction() {
+//     console.log("scroll and add class sticky in header");
+//     if (window.pageYOffset > sticky) {
+//       header.classList.add("sticky");
+//     } else {
+//       header.classList.remove("sticky");
+//     }
+//   }
+// }
 
 const events = () => {
   const navToggle = document.querySelector(dom.navToggle);

@@ -5,12 +5,12 @@
 	width: 243px;
 	height: 145px;
 	z-index: 9999;
+	position: fixed;
 	@include media ('>=sm') {
 		position: fixed;
 		top: 3rem;
 		left: 2.8rem;
 	}
-
 	&__header {
 		display: flex;
 		align-items: flex-end; 
