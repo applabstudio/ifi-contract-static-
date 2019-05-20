@@ -43,15 +43,4 @@ div.story-project {
 // SECTION Request Information Wrapper
 div.request-information {
 	background-color:#fafafa;
-	&__wrapper {
-		height: 14.3rem;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		a,
-		span {
-			font-size: 2.6rem;
-		}
-	}
 } // !SECTION

@@ -2,8 +2,9 @@ import 'lazysizes';
 import siteHeader from './modules/site-header';
 import allclick from './modules/allclick';
 import modal from './modules/modal';
-import searchModal from './modules/search-modal';
+// REVIEW import searchModal from './modules/search-modal';
 import swiper from './modules/swipers';
+import accordion from './modules/accordion';
 
 siteHeader.init(); 
 allclick.init();

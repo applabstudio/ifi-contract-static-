@@ -407,10 +407,50 @@
           <div class="container">
             <div class="row">
               <div class="col-2"></div>
-              <div class="col-10">
-                <div class="request-information__wrapper js-allclick">
-                  <a href="#">Richiedi informazioni</a> <span>&#43;</span>
-                </div>
+              <div class="col-10">   
+                      <div class=" accordion">
+                        <dl>
+                          <dt><a class="accordionTitle" href="#">Richiedi informazioni</a></dt>
+                          <dd class="accordionItem accordionItemCollapsed">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
+                                    </div>
+                                    <div class="col">
+                                      <div class="contact-accordion">
+                                        <form method="post" action="contactengine.php">
+                                          <input type="text" name="Name" id="name" placeholder="Nome*" />
+                                          <input type="text" name="Lastname" id="lastname"
+                                            placeholder="Cognome*" />
+                                          <br>
+                                          <input type="email" name="Email" id="email"
+                                            placeholder="E-mail*" />
+                                          <input type="tel" name="Phone" id="phone"
+                                            placeholder="Telefono" />
+                                          <br>
+                                          <input type="text" name="Azienda" id="azienda"
+                                            placeholder="Azienda*" />
+                                          <input type="text" name="Role" id="role" placeholder="Ruolo" />
+                                          <br>
+                                          <input type="text" name="Nation" id="nation"
+                                            placeholder="Nazione" />
+                                          <input type="text" name="Province" id="province"
+                                            placeholder="Provincia" />
+                                          <textarea name="Message" rows="20" cols="20" id="Message"
+                                            placeholder="Messaggio*"></textarea>
+                                          <input type="checkbox" name="" id=""> <span> dichiaro di aver
+                                            etto e di accettare l'informativa sulla privacy</span>
+                                          <br>
+                                          <input type="submit" name="submit" value="INVIA MESSAGGIO"
+                                            class="submit-button" />
+                                        </form>
+                                      </div>
+                                  </div>
+                                </div>
+                          
+                          </dd>
+                        </dl>
+                      </div>
               </div>
             </div>
           </div>

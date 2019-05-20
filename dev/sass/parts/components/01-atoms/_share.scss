@@ -34,8 +34,10 @@ div.share {
 
 	&:hover {
 		.social {
+			color:white;
 			opacity: 1;
 			i {
+				// FIXME transition:$tt;
 				color:white;
 			}
 		}
