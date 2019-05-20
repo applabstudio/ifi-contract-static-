@@ -151,6 +151,8 @@ $content-top: rem(64px);
 
   .container-footer-logo .col-6 ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
   }
 
   .container-footer-logo .col-6  li {

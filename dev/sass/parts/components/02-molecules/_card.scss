@@ -149,6 +149,12 @@ div.cards-progetti, .cards-download, .cards-newseventi {
 
 // SECTION CARD DOWNLOAD
 div.cards-download {
+  div.image-card {
+    height: 20rem !important;
+}
+div.card img {
+  height: 20rem;
+}
   .col {
     padding:0;
   }
