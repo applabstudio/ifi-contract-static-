@@ -79,7 +79,11 @@
   background-color: rgba(21, 21, 21, 0.3);
   width: 100%;
   position: absolute;
-  top: 46.3rem;
+  top: 37.9rem;
+  @include media('>=sm') {
+    top: 46.3rem;
+  }
+  
     h1 {
       text-align: left;
       font-size:ms(15);

@@ -15,7 +15,6 @@
 	font-size: 1em;
 	line-height: 1.5em;
 	margin-left:0;
-	margin-top: $mt;
 }
 
 .accordion dd p {
@@ -59,7 +58,6 @@
 
 @media all {
 	.accordionItem {
-		max-height: 100%;
 		-moz-transition: max-height 1s;
 		-o-transition: max-height 1s;
 		-webkit-transition: max-height 1s;
@@ -69,7 +67,6 @@
 
 @media screen and (min-width: 48em) {
 	.accordionItem {
-		max-height: 100%;
 		-moz-transition: max-height 0.5s;
 		-o-transition: max-height 0.5s;
 		-webkit-transition: max-height 0.5s;
@@ -105,7 +102,6 @@
 // 	animation-fill-mode: both;
 // 	animation-delay: 0s;
 // }
-
 // .animateOut {
 // 	-webkit-animation-name: accordionOut;
 // 	-webkit-animation-duration: 0.75s;

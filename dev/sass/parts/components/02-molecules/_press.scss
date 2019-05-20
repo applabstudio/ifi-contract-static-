@@ -3,11 +3,15 @@ div.press {
 	margin-bottom:$mt;
 	display: flex;
 	flex-direction: column;
+	&:hover {
+		transition: $tt;
+		box-shadow: 0px 0px 7px 3px #4c4c4cb8;
+	  }
 	.press-heading{
 		&__press-title {
-			text-align: center;
+			text-align: left;
 			font-size: ms(4);
-			padding: 1rem;
+			padding: 2rem;
 		}
 	}
 
@@ -25,6 +29,8 @@ div.press {
 	img {
 		object-fit: contain;
 		transition: 0.3s ease;
+		width: 80%;
+		margin: 0 auto;
 	}
 	div.zoom-effect-container { 
 		margin: 0 auto;
