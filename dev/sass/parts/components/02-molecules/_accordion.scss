@@ -15,9 +15,10 @@
 	font-size: 1em;
 	line-height: 1.5em;
 	margin-left:0;
+	margin-top: $mt;
 }
 
-.accordion dd>p {
+.accordion dd p {
 	font-family:$base-font-family;
 	line-height: 3rem;
 	font-size:ms(6);
@@ -53,11 +54,12 @@
 .accordionItem {
 	height: auto;
 	overflow: hidden;
+	
 }
 
 @media all {
 	.accordionItem {
-		max-height: 50em;
+		max-height: 100%;
 		-moz-transition: max-height 1s;
 		-o-transition: max-height 1s;
 		-webkit-transition: max-height 1s;
@@ -67,7 +69,7 @@
 
 @media screen and (min-width: 48em) {
 	.accordionItem {
-		max-height: 15em;
+		max-height: 100%;
 		-moz-transition: max-height 0.5s;
 		-o-transition: max-height 0.5s;
 		-webkit-transition: max-height 0.5s;
@@ -78,54 +80,55 @@
 .accordionItemCollapsed {
 	max-height: 0;
 }
+// STUB ANIMATION
+// .animateIn {
+// 	max-height:100%;
+// 	-webkit-animation-name: accordionIn;
+// 	-webkit-animation-duration: 0.65s;
+// 	-webkit-animation-iteration-count: 1;
+// 	-webkit-animation-direction: normal;
+// 	-webkit-animation-timing-function: ease-in-out;
+// 	-webkit-animation-fill-mode: both;
+// 	-webkit-animation-delay: 0s;
+// 	-moz-animation-name: normal;
+// 	-moz-animation-duration: 0.65s;
+// 	-moz-animation-iteration-count: 1;
+// 	-moz-animation-direction: alternate;
+// 	-moz-animation-timing-function: ease-in-out;
+// 	-moz-animation-fill-mode: both;
+// 	-moz-animation-delay: 0s;
+// 	animation-name: accordionIn;
+// 	animation-duration: 0.65s;
+// 	animation-iteration-count: 1;
+// 	animation-direction: normal;
+// 	animation-timing-function: ease-in-out;
+// 	animation-fill-mode: both;
+// 	animation-delay: 0s;
+// }
 
-.animateIn {
-	-webkit-animation-name: accordionIn;
-	-webkit-animation-duration: 0.65s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-direction: normal;
-	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-fill-mode: both;
-	-webkit-animation-delay: 0s;
-	-moz-animation-name: normal;
-	-moz-animation-duration: 0.65s;
-	-moz-animation-iteration-count: 1;
-	-moz-animation-direction: alternate;
-	-moz-animation-timing-function: ease-in-out;
-	-moz-animation-fill-mode: both;
-	-moz-animation-delay: 0s;
-	animation-name: accordionIn;
-	animation-duration: 0.65s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
-	animation-delay: 0s;
-}
-
-.animateOut {
-	-webkit-animation-name: accordionOut;
-	-webkit-animation-duration: 0.75s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-fill-mode: both;
-	-webkit-animation-delay: 0s;
-	-moz-animation-name: accordionOut;
-	-moz-animation-duration: 0.75s;
-	-moz-animation-iteration-count: 1;
-	-moz-animation-direction: alternate;
-	-moz-animation-timing-function: ease-in-out;
-	-moz-animation-fill-mode: both;
-	-moz-animation-delay: 0s;
-	animation-name: accordionOut;
-	animation-duration: 0.75s;
-	animation-iteration-count: 1;
-	animation-direction: alternate;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
-	animation-delay: 0s;
-}
+// .animateOut {
+// 	-webkit-animation-name: accordionOut;
+// 	-webkit-animation-duration: 0.75s;
+// 	-webkit-animation-iteration-count: 1;
+// 	-webkit-animation-direction: alternate;
+// 	-webkit-animation-timing-function: ease-in-out;
+// 	-webkit-animation-fill-mode: both;
+// 	-webkit-animation-delay: 0s;
+// 	-moz-animation-name: accordionOut;
+// 	-moz-animation-duration: 0.75s;
+// 	-moz-animation-iteration-count: 1;
+// 	-moz-animation-direction: alternate;
+// 	-moz-animation-timing-function: ease-in-out;
+// 	-moz-animation-fill-mode: both;
+// 	-moz-animation-delay: 0s;
+// 	animation-name: accordionOut;
+// 	animation-duration: 0.75s;
+// 	animation-iteration-count: 1;
+// 	animation-direction: alternate;
+// 	animation-timing-function: ease-in-out;
+// 	animation-fill-mode: both;
+// 	animation-delay: 0s;
+// }
 
 @-webkit-keyframes accordionIn {
 	0% {

@@ -2,6 +2,7 @@ div.contact-container {
 	.col {
 		padding: 0;
 	}
+}
 
 	div.contact {
 		margin-top: $mt;
@@ -88,9 +89,14 @@ div.contact-container {
 			font-size: ms(7);
 		}
 	}
-}
+
 
 // NOTE form in accordion 
-.contact-accordion {
-	
+.accordion {
+	.contact {
+		margin-top:0;
+		 form input, form textarea {
+			margin-bottom:2rem;
+		}
+	}
 }
