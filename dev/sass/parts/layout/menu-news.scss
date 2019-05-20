@@ -1,4 +1,4 @@
-.menu-project {
+.menu-news {
 	margin-top:$mt;
 	ul {
 		list-style: none;
@@ -10,14 +10,17 @@
 		white-space: nowrap;
 		padding-right: 4rem;
 	}
+	a {
+		font-family: $alt-font-family;
+		font-size: 30px;
+		color:#7d7a73
+	}
 	li.active {
 		a {
 			font-weight: 800;
-			font-size: 18px;
-			color:#84754e;
+			color:black;
 			text-transform: uppercase;
 		}
-		text-decoration: underline;
 		text-decoration-color:#84754e;
 	}
 }
