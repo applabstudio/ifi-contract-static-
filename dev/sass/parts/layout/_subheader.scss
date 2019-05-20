@@ -33,6 +33,12 @@
     font-family: $light-font-family;
     font-size: ms(5);
    }
+   .tinytext a {
+     text-decoration: none;
+     &:hover {
+       text-decoration: underline;
+     }
+   }
    ul {
     list-style-type: none;
     padding: 0;
