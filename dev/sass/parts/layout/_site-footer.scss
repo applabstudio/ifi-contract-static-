@@ -11,6 +11,14 @@
   @include media(">=sm"){
     text-align: left;
   }
+  .col-md:nth-child(2), .col-md:nth-child(3)  {
+      color:#7d7a73;
+  }
+  .col-md:nth-child(4), .col-md:nth-child(5) {
+    color:#7d7a73;
+  }
+  
+  
   .logo-footer {
       display: flex;
       align-items: center;
@@ -41,6 +49,9 @@
       }
   }
   .sub-footer {
+      a {
+        color:#6d6b62;
+      }
       padding-top: 4rem;
       .iubenda-container {
         font-size: 14px;
@@ -49,6 +60,7 @@
       p {
           font-size:14px;
           text-align: center;
+          color:#6d6b62;
       }
       .col-xl-2 {
           display: flex;
