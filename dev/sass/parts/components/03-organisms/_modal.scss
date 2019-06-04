@@ -120,8 +120,21 @@ $content-top: rem(64px);
   top: 14rem;
   left: 50%;
   box-shadow: 0 0 0;
+
+  /** fixed tablet view */
+  @media (min-width:993px) and (max-width:1120px){
+    display: flex;
+    justify-content: center;
+  }
+ /** fixed phone view */
+  @include media('<=md'){
+     display: flex;
+    justify-content: center;
+
+  }
   ul {
     list-style: none;
+    padding-inline-start: 10px;
     li {
       padding-top: $content-li;
       font-size: 2rem;

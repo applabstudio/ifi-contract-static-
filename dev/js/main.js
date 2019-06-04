@@ -4,6 +4,9 @@ import allclick from './modules/allclick';
 import modal from './modules/modal';
 // REVIEW import searchModal from './modules/search-modal';
 import swiper from './modules/swipers';
+import modalSearch from './modules/modal-search-nav';
+
+modalSearch.init();
 
 siteHeader.init(); 
 allclick.init();
