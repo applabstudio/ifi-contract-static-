@@ -44,7 +44,7 @@
       </button>
     </form>
    </div><!-- End Modal Content Chromeless -->
-   <div class="modal__content modal__content--menu-list-item">
+   <div class="modal__content modal__content--menu-list-item" data-menu>
       <ul class="menu-list-item__ul">
         <li class="menu-list-item__ul__li"> <a href="ifi-contract.html"><b>Ifi.</b> Contract</a></li>
         <li><a href="progetti.html">Progetti</a></li>
@@ -55,10 +55,28 @@
         <li><a href="news-&-eventi.html">News & Eventi</a></li>
         <li><a href="contatti.html">Contatti</a></li>
         <br>
-        <li id="cerca"><a href="#" data-modal="modal-search">Cerca</a></li>
+        <li id="cerca"><a  data-open-search>Cerca</a></li>
         <li> <a href="#"></a> Italiano / English</li>
       </ul>
     </div><!-- End Modal Content Menu List Item -->
+
+    <!--Modal search content-->
+
+    <div class="moal__content modal__content--search  form--centered" data-search>
+      <button class="btn-close" data-close-search>
+        X
+      </button>
+      <form action="" class="search__form">
+
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Cosa stai cercando?">
+          <button class="btn-submit" type="submit">cerca</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- End modal search content-->
     <div class="container-footer-logo">
         <div class="container">
           <div class="row">
