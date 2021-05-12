@@ -86,7 +86,7 @@
     "modularscale-sass": "^3.0.8",
     "normalize.css": "^8.0.0",
     "sass-rem": "^2.0.0",
-    "swiper": "^4.3.3",
+    "swiper": "^6.5.1",
     "tippy.js": "^4.3.0"
   }
 }
